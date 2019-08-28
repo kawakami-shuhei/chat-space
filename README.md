@@ -39,7 +39,7 @@
 ## messageテーブル
 |Column|Type|Options|
 |------|----|-------|
-|post|text|null: false|
+|body|text|null: false|
 |image|string|null:false|
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|nul: false, foreign_key: true|
