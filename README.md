@@ -42,7 +42,7 @@
 |body|text||
 |image|string||
 |group_id|references|null: false, foreign_key: true|
-|user_id|integer|nul: false, foreign_key: true|
+|user_id|references|nul: false, foreign_key: true|
 
 ### association
 - belong_to :group
