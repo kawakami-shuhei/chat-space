@@ -6,13 +6,13 @@
         %p.side-header__box__user-name aaaa
         %ul.side-header__box__menu
           %li.side-header__box__menu__new-group
-            %a{:href => "/groups/new"}
+            =link_to "/groups/new" do
               %i.fa.fa-edit
           %li.side-header__box__menu__edit-user
-            %a{:href => "/users/277/edit"}
+            =link_to "/users/277/edit" do
               %i.fa.fa-cog
     .groups
-      %a{:href => "/groups/438/messages"}
+      =link_to "/groups/438/messages" do
         .group
           %p.group__group-name zzz
           %p.group__latest-message aaa
@@ -24,7 +24,7 @@
         %ul.main-header__left-box__member-list
           Member：
           %li.main-header__left-box__member-list__member aaaa
-      %a{:href => "/groups/438/edit"}
+      =link_to "/groups/438/edit" do
         .main-header__edit-btn Edit
     .messages
       .message{"data-message_id" => "740"}
