@@ -23,23 +23,23 @@
       align-items: center;
       padding: 0 20px;
       
-      .side-header__box{
+      &__box{
         display: flex;
         justify-content: space-between;
         width: 100%;
         font-weight: bold;
 
-        .side-header__box__menu{
+        &__menu{
           display: flex;
 
-          .side-header__box__menu__new-group{
+          &__new-group{
             margin-left: 0.3rem;
             .fa.fa-edit{
               color: white;
             }
           }
 
-          .side-header__box__menu__edit-user{
+          &__edit-user{
             margin-left: 0.3rem;
             .fa.fa-cog{
               color: white;
@@ -63,7 +63,7 @@
           margin-bottom: 5px;
         }
 
-        .group__latest-message{
+        &__latest-message{
           font-size: 11px;
         }
       }
@@ -82,23 +82,23 @@
       border-bottom: solid 1px #eee;
       overflow: scroll;
 
-      .main-header__left-box{
+      &__left-box{
         margin-top: 35px;
 
-        .main-header__left-box__current-group{
+        &__current-group{
           font-size: 20px;
           color: #333;
           margin-bottom: 15px;
         }
 
-        .main-header__left-box__member-list{
+        &__member-list{
           display: flex;
           font-size: 12px;
           color: #999999;
         }
       }
 
-      .main-header__edit-btn{
+      &__edit-btn{
         height: 40px;
         line-height: 40px;
         padding: 0 20px;
@@ -119,24 +119,24 @@
       .message{
         padding-bottom: 40px;
 
-        .message__upper-info{
+        &__upper-info{
           display: flex;
           margin-bottom: 10px;
 
-          .message__upper-info__talker{
+          &__talker{
             color: #434a54;
             font-size: 16px;
             font-weight: bold;
           }
 
-          .message__upper-info__date{
+          &__date{
             color: #999999;
             font-size: 12px;
             margin-left: 10px;
           }
         }
 
-        .message__text{
+        &__text{
           color: #434a53;
           font-size: 14px;
           margin-bottom: 10px;
@@ -156,7 +156,7 @@
           position: relative;
           width: 100%;
 
-          .input-box__text{
+          &__text{
             height: 50px;
             width: 100%;
             padding: 0 40px 0 10px;
@@ -164,7 +164,7 @@
             border-style: none;
           }
 
-          .input-box__image{
+          &__image{
             font-size: 1.3rem;
             position: absolute;
             top: 10px;
@@ -179,7 +179,7 @@
               -webkit-font-smoothing: antialiased;
             }
 
-            .input-box__image__file{
+            &__file{
               display: none;
             }
           } 
