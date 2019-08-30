@@ -19,7 +19,7 @@
   .chat-main
     .main-header
       .main-header__left-box
-        %h2.main-header__left-box__current-group{"data-group_id" => "438"}
+        %h2.main-header__left-box__current-group{"data-group_id": "438"}
           zzz
         %ul.main-header__left-box__member-list
           Member：
@@ -27,23 +27,23 @@
       =link_to "/groups/438/edit" do
         .main-header__edit-btn Edit
     .messages
-      .message{"data-message_id" => "740"}
+      .message{"data-message_id": "740"}
         .message__upper-info
           %p.message__upper-info__talker aaaa
           %p.message__upper-info__date 2019/08/27(Tue) 14:23:54
         %p.message__text aaa
-      .message{"data-message_id" => "745"}
+      .message{"data-message_id": "745"}
         .message__upper-info
           %p.message__upper-info__talker aaaa
           %p.message__upper-info__date 2019/08/27(Tue) 14:29:58
         %p.message__text kkll
     .form
-      %form#new_message.new_message{"accept-charset" => "UTF-8", :action => "/groups/438/messages", :enctype => "multipart/form-data", :method => "post"}
-        %input{:name => "utf8", :type => "hidden", :value => "✓"}/
-        %input{:name => "authenticity_token", :type => "hidden", :value => "CFMu3wJAJkRwG3kTQGzVpjLuId1g76PT8QpgntByMMuFFnTj5oR7uduGh1M3J2CCeOqWM6EN7jyXDQVbZQa/WA=="}/
+      %form#new_message.new_message{"accept-charset": "UTF-8", action: "/groups/438/messages", enctype: "multipart/form-data", method: "post"}
+        %input{name: "utf8", type: "hidden", value: "✓"}/
+        %input{name: "authenticity_token", type: "hidden", value: "CFMu3wJAJkRwG3kTQGzVpjLuId1g76PT8QpgntByMMuFFnTj5oR7uduGh1M3J2CCeOqWM6EN7jyXDQVbZQa/WA=="}/
         .input-box
-          %input#message_content.input-box__text{:name => "message[content]", :placeholder => "type a message", :type => "text"}/
-          %label.input-box__image{:for => "message_image"}
+          %input#message_content.input-box__text{name: "message[content]", placeholder: "type a message", type: "text"}/
+          %label.input-box__image{for: "message_image"}
             %i.fa.fa-image
-            %input#message_image.input-box__image__file{:name => "message[image]", :type => "file"}/
-        %input.submit-btn{"data-disable-with" => "Send", :name => "commit", :type => "submit", :value => "Send"}/
+            %input#message_image.input-box__image__file{name: "message[image]", type: "file"}/
+        %input.submit-btn{"data-disable-with": "Send", name: "commit", type: "submit", value: "Send"}/
