@@ -11,7 +11,10 @@
           = link_to edit_user_path(current_user) do
             = fa_icon 'cog', class: 'icon'
   .groups
-    =link_to "/groups/438/messages" do
-      .group
-        %p.group__group-name zzz
-        %p.group__latest-message aaa
+    .group
+      - current_user.group.each do |group|
+        = link_to '#' do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。
