@@ -32,8 +32,8 @@ $(function() {
       processData: false,
       contentType: false
     })
-    .done(function(data) {
-      var html = buildHTML(data);
+    .done(function(message_data) {
+      var html = buildHTML(message_data);
       $('.messages').append(html);
       $('#message_body').val('');
       $('#message_image').val('');
