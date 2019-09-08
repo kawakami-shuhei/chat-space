@@ -35,8 +35,8 @@ $(function() {
     .done(function(message_data) {
       var html = buildHTML(message_data);
       $('.messages').append(html);
-      $('#message_body').val('');
-      $('#message_image').val('');
+      $('form')[0].reset();
+  
     })
     .fail(function(data) {
       alert('エラーが発生したためメッセージは送信できませんでした');
