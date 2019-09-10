@@ -56,15 +56,16 @@
       overflow: scroll;
 
       .group{
-        color: white;
         margin-bottom: 40px;
         
         &__name{
+          color: white;
           font-size: 15px;
           margin-bottom: 5px;      
         }
 
         &__message{
+          color: white;
           font-size: 11px;       
         }
       }
