@@ -31,8 +31,8 @@ $(document).on('turbolinks:load', function(){
       processData: false,
       contentType: false
     })
-    .done(function(message_data) {
-      var html = buildHTML(message_data);
+    .done(function(data) {
+      var html = buildHTML(data);
       $('.messages').append(html);
       $('form')[0].reset();
       $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
