@@ -35,7 +35,7 @@ $(document).on('turbolinks:load', function(){
       var html = buildHTML(data);
       $('.messages').append(html);
       $('form')[0].reset();
-      $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
+      $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight});
     })
     .fail(function(data) {
       alert('エラーが発生したためメッセージは送信できませんでした');
@@ -59,8 +59,8 @@ $(document).on('turbolinks:load', function(){
         messages.forEach(function (message) {
           insertHTML = buildHTML(message);
           $('.messages').append(insertHTML);       
+          $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight});
         });
-        $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
       })
       .fail(function () {
         alert('自動更新に失敗しました');
